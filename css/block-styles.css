@@ -1,0 +1,1056 @@
+/**
+ * block-styles.css
+ */
+
+.wp-block-cover.alignfull.profitamp-hero > div > .wp-block-image {
+	margin-bottom: 10%;
+}
+
+.site .button {
+	border: var(--button--border-width) solid transparent;
+}
+
+.wp-block-button:not(.is-style-outline)
+	.wp-block-button__link:not(:hover):not(:active):not(.has-background) {
+	background-color: var(--button--color-background);
+	color: var(--button--color-text);
+}
+.site .button:not(:hover):not(:active):not(.has-background),
+.site input[type='submit']:not(:hover):not(:active):not(.has-background) {
+	background-color: var(--button--color-background);
+}
+
+.site-main > article > .entry-content > .wp-block-group.alignfull {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.gravity-form-section.has-blue-background-color
+	.button:not(:hover):not(:active):not(.has-background) {
+	color: var(--button--color-background);
+	background-color: var(--button--color-text);
+}
+
+.gravity-form-section .gform_footer {
+	text-align: center;
+}
+
+.site .has-background-dim .button:hover {
+	color: var(--button--color-text);
+}
+
+div.wp-block-group.alignfull.member-callout-section-two.has-white-color.has-gray-background-color.has-text-color.has-background
+	> div
+	> div
+	> div,
+.site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.gravity-form-section,
+.site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.profitamp-callout-section-two {
+	padding: 3rem;
+}
+
+.gravity-form-section
+	.gform_wrapper.gravity-theme
+	> form
+	> .gform_footer
+	> .gform_button {
+	background-color: var(--button--color-background);
+	color: var(--button--color-text);
+	display: flex;
+	margin: auto;
+}
+
+.gravity-form-section.schedule-walkthrough-section,
+.gravity-form-section.schedule-walkthrough-section
+	.wp-block-group__inner-container {
+	background-color: #f7f7f8;
+	padding-bottom: 30rem;
+}
+
+.profitamp-hero .wp-block-image.profitamp-logo {
+	margin-bottom: 3rem;
+}
+
+.wp-block-media-text__content {
+	margin: 3rem;
+}
+
+.plan-comparison-section {
+	border-bottom: 1px solid gray;
+}
+
+.plan-comparison-section .wp-block-column.has-background {
+	margin-left: 0;
+	border-left: 1px solid gray;
+}
+
+.entry-content
+	> .membership-callout-section-one
+	> div
+	> div
+	> .wp-block-media-text__media {
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.hero-section h3.has-text-color {
+	font-family: FranklinGothicDemi;
+}
+
+.member-hero-section h2.has-text-color {
+	font-family: FranklinGothicDemi;
+}
+
+.api-customer-hero h3.has-text-color {
+	font-family: FranklinGothicDemi;
+}
+
+.profitamp-hero h2.has-text-color {
+	font-family: FranklinGothicDemi;
+}
+
+.profitamp-hero h2.has-text-color a {
+	text-decoration: none;
+}
+
+.entry-content
+	> .has-whiite-background-color
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button {
+	background-color: #1b75bb;
+}
+
+.api-customer-hero > div > div > div > div > figure {
+	margin-bottom: 50px;
+}
+
+.plan-comparison-section .wp-block-column {
+	padding: 5% 3%;
+}
+
+.caption {
+	text-align: center;
+}
+
+.wp-block-media-text__media img {
+	padding: 20px;
+}
+
+.wp-block-group.alignfull.member-benefits-section
+	> .wp-block-group__inner-container
+	> .wp-block-columns
+	> .wp-block-column
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> p,
+.wp-block-group.alignfull.member-benefits-section
+	> div
+	> div
+	> div
+	> div
+	> div
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> p {
+	font-size: 18px;
+}
+
+.member-benefits-callout .wp-block-image {
+	padding-top: 1%;
+}
+
+.member-benefits-callout p {
+	padding-bottom: 3%;
+}
+
+.wp-block-group.alignfull.member-benefits-section
+	> .wp-block-group__inner-container
+	> .wp-block-columns
+	> .wp-block-column
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> h5,
+.wp-block-group.alignfull.member-benefits-section
+	> div
+	> div
+	> div
+	> div
+	> div
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	> h5 {
+	font-size: 20px;
+	border-bottom: 1px solid gray;
+}
+
+@media only screen and (max-width: 481px) {
+	.site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+		padding-left: 1rem;
+	}
+	.entry-header .post-thumbnail,
+	.singular .post-thumbnail,
+	.alignfull [class*='inner-container'] > .alignwide,
+	.alignwide [class*='inner-container'] > .alignwide {
+		width: 90%;
+	}
+}
+
+.site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.testimonial-section,
+.site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.member-benefits-section {
+	padding: 7%;
+}
+
+.site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull
+	> div
+	> div
+	> div
+	> figure {
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+@media (max-width: 640px) {
+	.gform_wrapper.gravity-theme .gfield:not(.gfield--width-full) {
+		width: 100%;
+	}
+
+	.site-header > .site-logo {
+		padding-left: 1rem;
+	}
+
+	.site-header > .menu-button-container {
+		padding-right: 1rem;
+	}
+}
+
+/**
+ * Forms................Gravity Forms.
+ */
+#field_1_6,
+#field_1_7 {
+	margin-top: 1.4rem;
+}
+
+.gform_button.button {
+	word-wrap: break-word;
+}
+
+.gform_fields > .gfmc-container {
+	align-items: baseline;
+}
+
+.gform_wrapper.gravity-theme .gfmc-field div {
+	padding-bottom: 0.2rem;
+}
+
+.gform_wrapper.gravity-theme .gfield_label {
+	margin-bottom: 1px;
+	padding: 0 6px;
+}
+
+.gform_wrapper.gravity-theme > form > .gform_footer > .gform_button {
+	background-color: var(--button--color-background);
+	color: var(--button--color-text);
+}
+
+.wp-block-button:not(.is-style-outline)
+	.wp-block-button__link:not(:hover):not(:active):not(.has-background),
+.has-white-background-color
+	.wp-block-button:not(.is-style-outline)
+	.wp-block-button__link:not(:hover):not(:active):not(.has-background),
+.has-background
+	.wp-block-button:not(.is-style-outline)
+	.wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
+	background-color: var(--button--color-background);
+	color: var(--global--color-background);
+}
+
+.wp-block-group.alignfull.gravity-form-section.has-blue-background
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button {
+	color: var(--button--color-background);
+	background-color: var(--button--color-text);
+}
+
+.has-blue-background.swag .gform_wrapper.gravity-theme .gfield_label {
+	text-shadow: 1px 1px cadetblue;
+}
+
+@media only screen and (min-width: 768px) {
+	.wp-block-group.alignfull.gravity-form-section.has-blue-background.swag {
+		background-image: url(../assets/aap-swag-female.png),
+			url(../assets/aap-swag-male.png);
+		background-repeat: no-repeat;
+		background-position: right bottom, left bottom;
+	}
+}
+
+/**
+ * BUTTONS............BUTTONS
+ */
+.gform_button {
+	white-space: normal;
+}
+
+.gfmc-field div {
+	padding-bottom: 0.3rem;
+}
+
+.gform_wrapper.gravity-theme .gfield_label {
+	margin-bottom: 1px;
+	padding: 0 6px;
+}
+
+.wp-block-group.alignfull.gravity-form-section.has-background
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button {
+	border: 3px solid #1b75bb;
+	color: #ffffff;
+	background-color: #1b75bb;
+}
+
+.wp-block-group.alignfull.gravity-form-section.has-background
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button:hover {
+	border: 3px solid #000000;
+	color: #000000;
+	background-color: transparent;
+}
+
+.wp-block-group.alignfull.gravity-form-section.has-blue-background
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button {
+	border: 3px solid #1b75bb;
+	background-color: #ffffff;
+	display: flex;
+	margin: auto;
+	color: #000000;
+}
+
+.wp-block-group.alignfull.gravity-form-section.has-blue-background
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button:hover {
+	background-color: transparent;
+	color: #ffffff;
+	border: 3px solid #ffffff;
+}
+
+.wp-block-group.alignfull.gravity-form-section.schedule-walkthrough-section
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button {
+	border: 3px solid #1b75bb;
+	color: #ffffff;
+	background-color: #1b75bb;
+}
+
+.wp-block-group.alignfull.gravity-form-section.schedule-walkthrough-section
+	> div
+	> div
+	> form
+	> .gform_footer
+	> .gform_button:hover {
+	border: 3px solid #000000;
+	color: #000000;
+	background-color: transparent;
+}
+
+.wp-block-group.alignfull.gravity-form-section.schedule-walkthrough-section
+	> .wp-block-group__inner-container,
+.wp-block-group.alignfull.gravity-form-section.schedule-walkthrough-section {
+	background-color: transparent;
+}
+
+.wp-block-group.alignfull.testimonial-section img {
+	border: 1.25rem solid;
+}
+
+.site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.regional-reps-map {
+	padding: 3rem 0;
+}
+
+.wp-block-group.alignfull.preferred-partner-section
+	> div
+	> div.wp-block-buttons
+	> div.wp-block-button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.wp-block-group.alignfull.member-benefits-callout
+	> div
+	> div
+	> div:nth-child(2)
+	> div.wp-block-group
+	> div
+	> h2,
+div.wp-block-group.alignfull.member-benefits-callout
+	> div
+	> div
+	> div:nth-child(2)
+	> div.wp-block-group
+	> div
+	> h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.member-benefits-callout p {
+	width: 70%;
+	margin: auto;
+}
+
+.member-benefits-callout > div > div > div > div > figure {
+	border: 1.25rem solid;
+}
+
+div.wp-block-cover.alignfull.has-white-background-color.hero-section > div > p {
+	margin-bottom: 1px;
+}
+div.wp-block-cover.alignfull.has-white-background-color.hero-section
+	> div
+	> h2 {
+	margin-top: 0;
+}
+
+.member-benefits-callout > div > div > div > div.is-style-default > figure {
+	border: none;
+	border-radius: 0;
+	height: auto;
+	width: 80%;
+}
+
+.member-benefits-callout
+	> div
+	> div
+	> div
+	> div.is-style-default
+	> figure
+	> img {
+	object-fit: inherit;
+}
+
+.member-benefits-callout
+	> div
+	> div
+	> div
+	> div.is-style-aap-member-benefits
+	> figure {
+	border: 1.25rem solid;
+	border-radius: 50%;
+	align-items: center;
+	width: 66%;
+}
+.member-benefits-callout
+	> div
+	> div.wp-block-columns
+	> div.wp-block-column:first-child
+	> div.is-style-aap-member-benefits
+	> figure {
+	border: 1.25rem solid #1b75bb;
+}
+
+div.wp-block-group.alignfull.member-benefits-callout > div > div > div {
+	padding-top: 5%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 4fr 3fr 3fr;
+}
+
+@media only screen and (min-width: 900px) {
+	div.wp-block-group.alignfull.member-benefits-callout > div > div > div {
+		padding-top: 5%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 4fr 1fr 2fr;
+	}
+}
+
+div.wp-block-group.alignfull.member-benefits-callout
+	> div
+	> div
+	> div
+	> div.wp-block-image.is-style-default,
+div.wp-block-group.alignfull.member-benefits-callout
+	> div
+	> div
+	> div
+	> div.wp-block-group {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+div.wp-block-cover.alignfull.has-white-background-color.hero-section > div > p {
+	margin-bottom: 1px;
+}
+div.wp-block-cover.alignfull.has-white-background-color.hero-section
+	> div
+	> h2 {
+	margin-top: 0;
+}
+
+.wp-block-columns.hero-section-callout-wrapper {
+	max-width: unset;
+}
+
+.wp-block-columns.hero-section-callout-wrapper p {
+	margin-top: 0.5rem;
+}
+
+.wp-block-columns.hero-section-callout-wrapper h3 {
+	margin-bottom: 0;
+}
+
+h2.hero-section-heading {
+	font-family: 'FranklinGothicDemi';
+}
+
+.wp-block-group.alignfull.member-benefits-section
+	> .wp-block-group__inner-container
+	> .wp-block-columns
+	> .wp-block-column
+	> .wp-block-group
+	> .wp-block-group__inner-container {
+	display: grid;
+	grid-template-columns: 20% 1fr;
+}
+
+div.wp-block-group.alignfull.member-benefits-section
+	> div
+	> div
+	> div
+	> div
+	> div
+	> p {
+	grid-column: 2;
+}
+
+.wp-block-group.alignfull.member-benefits-section > div > div {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	max-width: 95%;
+	width: 90%;
+}
+
+.wp-block-group.alignfull.member-benefits-section {
+	margin: 2rem auto;
+}
+
+@media only screen and (min-width: 900px) {
+	.wp-block-group.alignfull.member-benefits-section {
+		margin: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.wp-block-group.alignfull.member-benefits-section {
+		margin: 5rem;
+	}
+}
+
+div.wp-block-group.alignfull.profitamp-callout-section-two.has-background
+	> div
+	> div
+	> div:nth-child(2) {
+	padding: 0 1rem;
+}
+
+div.wp-block-group.alignfull.profitamp-comparison-section
+	> div
+	> div
+	> div.wp-block-column
+	> figure
+	> table
+	> tbody
+	> tr
+	> td {
+	border: none;
+}
+
+div.wp-block-group.alignfull.profitamp-comparison-section
+	> div
+	> div
+	> div
+	> figure
+	> table
+	> tbody
+	> tr
+	> td {
+	font-size: 1.5rem;
+	font-family: 'FranklinGothicBook';
+}
+
+.wp-block-column.comparison-upgrade-button-wrapper {
+	margin-left: 0;
+}
+.site-content
+	> .content-area
+	> .site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.member-callout-section-two {
+	padding-bottom: 0;
+}
+
+.member-callout-section-two .wp-block-media-text .wp-block-media-text__media {
+	align-self: flex-end;
+}
+
+div.wp-block-group.alignfull.profitamp-comparison-section
+	> div
+	> div
+	> div
+	> figure
+	> table
+	> tbody
+	> tr
+	> td {
+	font-size: 1.5rem;
+	font-family: 'FranklinGothicBook';
+}
+
+.plan-comparison-section .wp-block-column {
+	padding: 5%;
+}
+
+/**
+ * BLOCK STYLES.........BLOCK STYLES
+ */
+.wp-block-media-text > .wp-block-media-text__content > #callout-h3,
+.wp-block-media-text > .wp-block-media-text__content > .callout-h3 {
+	font-size: 40px;
+	line-height: 46px;
+	margin-bottom: 0;
+	font-family: FranklinGothicBook;
+}
+
+.wp-block-media-text .wp-block-media-text__content > .callout-h4 {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+#callout-p,
+.callout-p,
+.wp-block-media-text .wp-block-media-text__content > .callout-p {
+	margin: 0;
+	line-height: 16px;
+	font-size: 16px;
+}
+
+.footerwrap #menu-policy li,
+.footerwrap #menu-social-media li {
+	border: none;
+}
+
+.footerwrap #menu-policy li a {
+	text-decoration: underline;
+}
+.wp-block-group.alignfull.member-callout-section-two.has-white-color.has-text-color.has-background
+	> div
+	> div
+	> div
+	> div
+	> div
+	> a.wp-block-button__link.has-gray-color.has-text-color {
+	background-color: #777770;
+	color: #fff;
+}
+
+div.wp-block-group.alignfull.member-benefits-section
+	> div
+	> div
+	> div
+	> div.wp-block-image {
+	height: 7rem;
+}
+div.wp-block-group.alignfull.member-benefits-section
+	> div
+	> div
+	> div
+	> div.wp-block-image
+	> figure
+	> img {
+	height: 100px;
+	width: auto;
+}
+.member-benefits-section h2 {
+	padding-bottom: 50px;
+}
+
+div.wp-block-group.alignfull.member-benefits-section > div > div > div > h4 {
+	padding: 1rem 0;
+}
+
+.wp-block-group.alignfull.member-benefits-section
+	> .wp-block-group__inner-container
+	> .wp-block-columns
+	> .wp-block-column
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	figure {
+	padding: 0 10px 0 0;
+	margin: 0;
+}
+
+.wp-block-group.alignfull.member-benefits-section
+	> .wp-block-group__inner-container
+	> .wp-block-columns
+	> .wp-block-column
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	h5 {
+	width: 100%;
+	align-self: center;
+	border-bottom: 2px dotted;
+	margin: 0;
+}
+
+.wp-block-group.alignfull.member-benefits-section
+	> .wp-block-group__inner-container
+	> .wp-block-columns
+	> .wp-block-column
+	> .wp-block-group
+	> .wp-block-group__inner-container
+	p {
+	grid-column: 2;
+	margin: 0;
+}
+
+.member-benefits-callout > div > div > div > div > figure > img {
+	min-height: 0;
+	width: auto;
+}
+
+.member-benefits-callout > div > div > .wp-block-column {
+	margin-left: 0;
+}
+
+.wp-block-group.alignfull.member-callout-section-two.has-background
+	.wp-block-group__inner-container
+	> .alignfull {
+	margin: 0;
+	max-width: 100%;
+}
+
+.testimonial-section h2 {
+	padding-bottom: 50px;
+}
+
+/* API CUSTOMER */
+.api-customer-hero
+	> div
+	> div
+	> div
+	> .wp-block-columns.alignwide
+	> .wp-block-column
+	> h3 {
+	margin-bottom: 15px;
+}
+
+.api-customer-hero
+	> div
+	> div
+	> div
+	> .wp-block-columns.alignwide
+	> .wp-block-column
+	> p {
+	margin-top: 0;
+}
+
+/* PROFITAMP */
+.wp-block-group .wp-block-group__inner-container .profitamp-hero-h2 {
+	margin-bottom: 0;
+}
+
+.wp-block-group .wp-block-group__inner-container .profitamp-hero-p {
+	margin-top: 13px;
+}
+
+.schedule-walkthrough-section > .wp-block-group__inner-container > h2 {
+	margin-bottom: 20px;
+}
+
+.schedule-walkthrough-section > .wp-block-group__inner-container > p {
+	margin-top: 0;
+}
+
+.wp-block-columns .wp-block-column .comparison-p-bold {
+	margin-bottom: 20px;
+}
+
+.wp-block-columns .wp-block-column .comparison-p-subsequent {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.wp-block-columns .wp-block-column .comparison-p-small {
+	margin-top: 10px;
+}
+
+.profitamp-hero .hero-columns-wrapper h2 {
+	white-space: nowrap;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.testimonial-section > div > .wp-block-columns.alignfull {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.testimonial-section
+		> div
+		> .wp-block-columns.alignfull
+		> .wp-block-column {
+		flex-basis: 30%;
+		margin-bottom: 50px;
+	}
+}
+
+.wp-block-group.alignfull.api-testimonial-section {
+	padding-bottom: 5%;
+}
+
+.metaslider .caption-wrap {
+	position: relative;
+	top: 1rem;
+	background: transparent;
+	color: black;
+	font-size: 1.5rem;
+}
+
+.wp-block-group.alignfull.api-testimonial-section
+	.metaslider
+	.flex-control-nav {
+	right: 1px;
+}
+
+#metaslider_944 {
+	padding: 2% 25%;
+}
+
+#metaslider_944 > ul.slides > li > div,
+#metaslider_944 .metaslider .caption-wrap {
+	position: relative;
+	top: 2rem;
+	background: transparent;
+	color: black;
+}
+
+#metaslider_container_944 {
+	margin: 3rem 0;
+	border: none;
+}
+
+.wp-block-group.alignfull.leadership-section img {
+	border: 0.75rem solid;
+}
+
+.wp-block-group.alignfull.leadership-section
+	.wp-block-image.is-style-aap-rounded-border
+	img {
+	border: 0.75rem solid;
+	border-radius: 50%;
+}
+
+.site-content
+	> .content-area
+	> .site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.leadership-section {
+	padding: 5% 0;
+}
+
+.api-testimonial-section .metaslider .flex-control-nav {
+	position: relative;
+	top: 3rem;
+	right: 0rem;
+}
+
+@media only screen and (min-width: 1400px) {
+	.member-benefits-callout
+		> div
+		> div
+		> div
+		> div.is-style-aap-member-benefits
+		> figure {
+		width: auto;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.profitamp-hero
+		> div
+		> div
+		> div
+		> .wp-block-columns.alignwide.hero-columns-wrapper {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.gfield {
+		width: 100%;
+	}
+
+	.plan-comparison-section
+		> div
+		> .wp-block-columns
+		> .wp-block-column
+		> .wp-block-buttons {
+		display: flex;
+		justify-content: center;
+	}
+
+	.plan-comparison-section > div > .wp-block-columns > .wp-block-column {
+		margin-bottom: 0;
+	}
+}
+
+.wp-block-group.alignfull.leadership-section
+	.wp-block-image.is-style-aap-rounded-border
+	img {
+	border: 0.75rem solid;
+	border-radius: 50%;
+}
+
+.site-content
+	> .content-area
+	> .site-main
+	> article
+	> .entry-content
+	> .wp-block-group.alignfull.leadership-section {
+	padding: 5% 0;
+}
+
+.api-testimonial-section .metaslider .flex-control-nav {
+	position: relative;
+	top: 3rem;
+	right: 1px;
+}
+
+.wp-block-media-text .wp-block-media-text__media img {
+	padding: 0;
+}
+
+.wp-block-group.alignfull.preferred-partner-section {
+	margin-top: 2rem;
+}
+
+.wp-block-group.alignfull.plan-comparison-section .wp-block-table td,
+.wp-block-group.alignfull.plan-comparison-section .wp-block-table th {
+	border: none;
+}
+
+.wp-block-group.alignfull.member-benefits-callout > div > div.wp-block-columns {
+	border-bottom: 1px dotted;
+}
+.wp-block-group.alignfull.member-benefits-callout
+	> div
+	> div
+	> div:nth-child(2) {
+	border-left: 1px dotted;
+}
+.preferred-partner-section img {
+	margin-bottom: 0;
+	padding: 1rem;
+}
+
+.preferred-partner-section .wp-block-group__inner-container {
+	margin-top: 5%;
+}
+
+.preferred-partner-section .wp-block-group__inner-container .wp-block-columns {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.preferred-partner-section
+	.wp-block-group__inner-container
+	.wp-block-columns
+	.wp-block-column {
+	flex-basis: 80%;
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.preferred-partner-section
+		.wp-block-group__inner-container
+		.wp-block-columns
+		.wp-block-column {
+		flex-basis: 30%;
+		max-width: 40%;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.preferred-partner-section
+		.wp-block-group__inner-container
+		.wp-block-columns
+		.wp-block-column {
+		flex-basis: 15%;
+		max-width: 20%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.preferred-partner-section
+		.wp-block-group__inner-container
+		.wp-block-columns
+		.wp-block-column {
+		flex-basis: 10%;
+		max-width: 20%;
+	}
+}

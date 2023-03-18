@@ -29,11 +29,11 @@ function enqueue_wp_child_theme() {
 }
 
 // Hook into editor only hook
-add_action( 'enqueue_block_editor_assets', 'enqueue_block_editor_styles_scripts' );
+add_action( 'enqueue_block_editor_assets', 'enqueue_vangeek_block_editor_styles_scripts' );
 /**
  * Enqueue block-name main JavaScript file for the editor
  */
-function enqueue_block_editor_styles_scripts() {
+function enqueue_vangeek_block_editor_styles_scripts() {
 	$filepath = '/css/editor.css';
 
 	wp_enqueue_script(
@@ -55,19 +55,19 @@ function vangeek_2021_child_theme_setup() {
 		set_theme_mod( 'background_color', 'ffffff' );
 	}
 
-	unregister_nav_menu( 'footer' );
+	// unregister_nav_menu( 'footer' );
 
-	register_nav_menus(
-		array(
-			'contact'    => esc_html__( 'Contact menu', 'vangeek-2021' ),
+	// register_nav_menus(
+	// 	array(
+	// 		'contact'    => esc_html__( 'Contact menu', 'vangeek-2021' ),
 
-			'privacy'    => esc_html__( 'Privacy menu', 'vangeek-2021' ),
+	// 		'privacy'    => esc_html__( 'Privacy menu', 'vangeek-2021' ),
 
-			'quicklinks' => esc_html__( 'Quick Links', 'vangeek-2021' ),
+	// 		'quicklinks' => esc_html__( 'Quick Links', 'vangeek-2021' ),
 
-			'social'     => esc_html__( 'Social menu', 'vangeek-2021' ),
-		)
-	);
+	// 		'social'     => esc_html__( 'Social menu', 'vangeek-2021' ),
+	// 	)
+	// );
 }
 
 
@@ -83,7 +83,7 @@ function vangeek_register_settings() {
 
 // ChildThemeWP.com Options Page
 function vangeek_register_options_page() {
-	add_options_page( 'Child Theme Settings', 'My Child Theme', 'manage_options', 'vangeek', 'vangeek_theme_options_page' );
+	add_theme_page( 'Child Theme Settings', 'My Child Theme', 'manage_options', 'vangeek', 'vangeek_theme_options_page' );
 }
 add_action( 'admin_menu', 'vangeek_register_options_page' );
 
@@ -127,18 +127,51 @@ function vangeek_theme_options_page() {  ?>
 	<?php
 }
 
-add_action( 'wp_footer', 'vangeek_footer_copyright' );
+
+add_action( 'wp_enqueue_scripts', 'enqueue_vangeek_theme_style', 11 );
 /**
- * Footer Copyright
+ * [enqueue_vangeek_theme_style] As a child theme, let's make sure we enqueue scripts and styles from the parent theme.
  *
  * @return void
  */
-function vangeek_footer_copyright() {
-	?>
-		<div id="vangeek-footer-copyright">
-			<p>
-				<?php echo __( '©2022 Funder Trading. All Rights Reserved.', 'api-guys-2021' ); ?>
-			</p>
-		</div>
-	<?php
+function enqueue_vangeek_theme_style() {
+	 wp_register_style( 'parent-style', esc_url( trailingslashit( get_template_directory_uri() ) . 'style.css' ), [], 1.3 );
+	wp_enqueue_style(
+		'child-style',
+		get_stylesheet_directory_uri() . '/style.css',
+		array( 'parent-style' ),
+		filemtime( get_stylesheet_directory() . '/style.css' )
+	);
+	wp_enqueue_script( 'font-awesome-kit', 'https://kit.fontawesome.com/a007598d68.js', [], '1.2', false );
+}
+
+add_action( 'enqueue_block_assets', 'enqueue_vangeek_theme_block_styles' );
+/**
+ * [enqueue_vangeek_theme_block_styles] Block styles for frontend and backend.
+ *
+ * @return void
+ */
+function enqueue_vangeek_theme_block_styles() {
+	wp_enqueue_style(
+		'aap-block-styles',
+		get_stylesheet_directory_uri() . '/css/block-styles.css',
+		array(),
+		filemtime( get_stylesheet_directory() . '/css/block-styles.css' ),
+	);
+}
+
+
+add_action( 'enqueue_block_editor_assets', 'enqueue_vangeek_theme_editor_style', 31 );
+/**
+ * [enqueue_vangeek_theme_editor_style] Block styles for backend only.
+ *
+ * @return void
+ */
+function enqueue_vangeek_theme_editor_style() {
+	wp_enqueue_style(
+		'aap-editor-styles',
+		get_stylesheet_directory_uri() . '/css/editor-styles.css',
+		array(),
+		filemtime( get_stylesheet_directory() . '/css/editor-styles.css' ),
+	);
 }

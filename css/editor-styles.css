@@ -1,0 +1,19 @@
+/**
+ * editor-styles.css
+ */
+.wp-block-group__inner-container {
+	border: 2px dotted gray;
+	padding: 2rem 0;
+}
+.wp-block-columns.alignfull {
+	margin-top: 0;
+}
+.edit-post-header-toolbar #extendify-templates-inserter-btn,
+#extendify-templates-inserter {
+	display: none!important;
+}
+
+.member-benefits-callout .block-editor-block-list__block.wp-block.wp-block-column.block-editor-block-list__layout figure.block-editor-block-list__block.wp-block-image img{
+	border: 1rem solid blue;
+	border-radius: 50%;
+}
