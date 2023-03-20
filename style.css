@@ -5,6 +5,11 @@
  * Description:  A child theme of the TwentyTwenty-one default WordPress theme
  * Author:       PBrocks
  * Template:     twentytwentyone
- * Text Domain:  vangeek-theme
- * Version:      2.3.5
+ * Text Domain:  vangeek-2021
+ * Version:      2.3.6
  */
+
+.singular .entry-title {
+    font-size: var(--global--font-size-page-title);
+    font-size: 4rem;
+}

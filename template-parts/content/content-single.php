@@ -24,10 +24,10 @@
 
 		wp_link_pages(
 			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'vangeek-theme' ) . '">',
+				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'vangeek-2021' ) . '">',
 				'after'    => '</nav>',
 				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'vangeek-theme' ),
+				'pagelink' => esc_html__( 'Page %', 'vangeek-2021' ),
 			)
 		);
 		?>

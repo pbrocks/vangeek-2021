@@ -10,13 +10,13 @@
 ?>
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
-	<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'vangeek-theme' ); ?>">
+	<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'vangeek-2021' ); ?>">
 		<div class="menu-button-container">
 			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
-				<span class="dropdown-icon open"><?php esc_html_e( 'Menu', 'vangeek-theme' ); ?>
+				<span class="dropdown-icon open"><?php esc_html_e( 'Menu', 'vangeek-2021' ); ?>
 					<?php echo twenty_twenty_one_get_icon_svg( 'ui', 'menu' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 				</span>
-				<span class="dropdown-icon close"><?php esc_html_e( 'Close', 'vangeek-theme' ); ?>
+				<span class="dropdown-icon close"><?php esc_html_e( 'Close', 'vangeek-2021' ); ?>
 					<?php echo twenty_twenty_one_get_icon_svg( 'ui', 'close' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 				</span>
 			</button><!-- #primary-mobile-menu -->
@@ -36,7 +36,7 @@
 <?php endif; ?>
 
 <?php if ( has_nav_menu( 'contact' ) ) : ?>
-	<nav aria-label="<?php esc_attr_e( 'Contact menu', 'vangeek-theme' ); ?>" class="contact-navigation">
+	<nav aria-label="<?php esc_attr_e( 'Contact menu', 'vangeek-2021' ); ?>" class="contact-navigation">
 		<ul class="contact-navigation-wrapper">
 			<?php
 			wp_nav_menu(

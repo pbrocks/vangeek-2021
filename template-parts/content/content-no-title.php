@@ -25,10 +25,10 @@
 
 		wp_link_pages(
 			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'vangeek-theme' ) . '">',
+				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'vangeek-2021' ) . '">',
 				'after'    => '</nav>',
 				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'vangeek-theme' ),
+				'pagelink' => esc_html__( 'Page %', 'vangeek-2021' ),
 			)
 		);
 		?>
@@ -40,7 +40,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post. Only visible to screen readers. */
-					esc_html__( 'Edit %s', 'vangeek-theme' ),
+					esc_html__( 'Edit %s', 'vangeek-2021' ),
 					'<span class="screen-reader-text">' . get_the_title() . '</span>'
 				),
 				'<span class="edit-link">',

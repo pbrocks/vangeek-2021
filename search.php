@@ -18,7 +18,7 @@ if ( have_posts() ) {
 			<?php
 			printf(
 				/* translators: %s: Search term. */
-				esc_html__( 'Results for "%s"', 'vangeek-theme' ),
+				esc_html__( 'Results for "%s"', 'vangeek-2021' ),
 				'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 			);
 			?>
@@ -34,7 +34,7 @@ if ( have_posts() ) {
 					'We found %d result for your search.',
 					'We found %d results for your search.',
 					(int) $wp_query->found_posts,
-					'vangeek-theme'
+					'vangeek-2021'
 				)
 			),
 			(int) $wp_query->found_posts

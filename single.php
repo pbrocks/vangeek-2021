@@ -22,7 +22,7 @@ while ( have_posts() ) :
 		the_post_navigation(
 			array(
 				/* translators: %s: Parent post link. */
-				'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'vangeek-theme' ), '%title' ),
+				'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'vangeek-2021' ), '%title' ),
 			)
 		);
 	}
@@ -36,8 +36,8 @@ while ( have_posts() ) :
 	$vangeek_theme_next = is_rtl() ? twenty_twenty_one_get_icon_svg( 'ui', 'arrow_left' ) : twenty_twenty_one_get_icon_svg( 'ui', 'arrow_right' );
 	$vangeek_theme_prev = is_rtl() ? twenty_twenty_one_get_icon_svg( 'ui', 'arrow_right' ) : twenty_twenty_one_get_icon_svg( 'ui', 'arrow_left' );
 
-	$vangeek_theme_next_label     = esc_html__( 'Next post', 'vangeek-theme' );
-	$vangeek_theme_previous_label = esc_html__( 'Previous post', 'vangeek-theme' );
+	$vangeek_theme_next_label     = esc_html__( 'Next post', 'vangeek-2021' );
+	$vangeek_theme_previous_label = esc_html__( 'Previous post', 'vangeek-2021' );
 
 	the_post_navigation(
 		array(
